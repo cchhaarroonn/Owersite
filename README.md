@@ -11,7 +11,7 @@ Current features of project, in future i'll add more features to make project be
 ✔️ Moveing cursor to random positions on screen
 ✔️ Spam clicking left and right mouse button clicks
 ✔️ Spamming sentences and spamming enter button on keyboard
-❌ Change background
+👷 Change background
 ```
 ## Installation
 
