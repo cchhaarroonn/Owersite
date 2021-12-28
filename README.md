@@ -39,6 +39,10 @@ python app.py
 
 This script is currently being developed only for Windows but some of features still work on Linux. Features that work on linux are: Move cursor, spammsg, clicking, openwebsite. In future I'll add more Linux features so fun would be equal on every OS!
 
+## Current version and release notes
+
+Current version of this project is v1.0.5 in this version i added changing background and spamming error vbs script with random symbols!
+
 ## Note
 
 Script is made only for fun and I (author of project AKA charon) am not responsible for any possible harming changes that people might add by forking project. Run other forks on your own risk!
