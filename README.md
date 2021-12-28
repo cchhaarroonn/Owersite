@@ -12,6 +12,7 @@ Current features of project, in future i'll add more features to make project be
 ✔️ Spam clicking left and right mouse button clicks
 ✔️ Spamming sentences and spamming enter button on keyboard
 ✔️ Change background
+✔️ Running vbs script that spams error msg box with random symbols
 ```
 ## Installation
 
