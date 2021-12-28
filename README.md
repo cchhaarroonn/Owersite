@@ -35,10 +35,10 @@ To run script you need to open cmd/terminal and write following command
 python app.py
 ```
 
+## Supported OS
+
+This script is currently being developed only for Windows but some of features still work on Linux. Features that work on linux are: Move cursor, spammsg, clicking, openwebsite. In future I'll add more Linux features so fun would be equal on every OS!
+
 ## Note
 
 Script is made only for fun and I (author of project AKA charon) am not responsible for any possible harming changes that people might add by forking project. Run other forks on your own risk!
-
-## Author's message
-
-This script is made to be fun just like the person which responds to the pseudonym owersite. Be funny like owersite!
