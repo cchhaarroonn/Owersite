@@ -32,3 +32,7 @@ python app.py
 ## Note
 
 Script is made only for fun and I (author of project AKA charon) am not responsible for any possible harming changes that people might add by forking project. Run other forks on your own risk!
+
+## Author's message
+
+This script is made to be fun just like the person which responds to the pseudonym owersite. Be funny like owersite!
