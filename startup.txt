@@ -1,0 +1,3 @@
+Startup feature only works for Windows 8 and 10 becuase they have the same way of setting script to run automaticaly on startup.
+If you want to "disable" startup feature just remove few lines of code that are marked with comments in code.
+Windows 7 or older versions wont have startup feature I will not include that feature for old versions because people dont use that versions and it is useless!1
