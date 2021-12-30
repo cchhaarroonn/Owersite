@@ -13,7 +13,7 @@ Current features of project, in future i'll add more features to make project be
 ✔️ Spamming sentences and spamming enter button on keyboard
 ✔️ Change background
 ✔️ Running vbs script that spams error msg box with random symbols
-✔️ Run on startup (Windows 8 & Windows 10 only)
+✔️ Run on startup (Windows 8 and Windows 10 only)
 ```
 ## Installation
 
