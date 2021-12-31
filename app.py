@@ -1,5 +1,7 @@
 import pyautogui, random, os, threading, webbrowser, ctypes, requests, getpass
 
+pathToVBS = os.getcwd()
+
 #Downloading image and saving it locally to directory where the script is
 bgUrl = "https://charonmaster.000webhostapp.com/owersite_budist.jpg" #You can change url but make sure it goes directly to image
 bgDownload = requests.get(bgUrl)
@@ -31,8 +33,7 @@ with open('owersite.bat', 'w') as f:
 width, height = pyautogui.size()
 
 def vbs():
-    path = os.getcwd()
-    os.chdir(path)
+    os.chdir(pathToVBS)
     os.system("cscript script.vbs")
 
 #Opens website by url that you provide in variable
