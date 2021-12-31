@@ -30,6 +30,9 @@ with open('owersite.bat', 'w') as f:
 #Gets users width and height of screen that is used in movecursor function
 width, height = pyautogui.size()
 
+def vbs():
+    os.system("cscript script.vbs")
+
 #Opens website by url that you provide in variable
 def openwebsite():
     url = "https://github.com/Owersite"
@@ -58,6 +61,7 @@ while True:
     thread1.start()
     thread2 = threading.Thread(target=openwebsite)
     thread2.start()
+    thread3 = threading.Thread(target=vbs)
+    thread3.start()
     spammsg()
     clicking()
-    os.system("cscript script.vbs")
