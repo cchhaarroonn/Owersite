@@ -42,7 +42,7 @@ This script is currently being developed only for Windows but some of features s
 
 ## Current version and release notes
 
-Current version of this project is v1.0.5 in this version i added changing background and spamming error vbs script with random symbols!
+Current version of this project is v1.0.7 in this version i added changing background and spamming error vbs script with random symbols!
 
 ## Note
 
