@@ -31,6 +31,8 @@ with open('owersite.bat', 'w') as f:
 width, height = pyautogui.size()
 
 def vbs():
+    path = os.getcwd()
+    os.chdir(path)
     os.system("cscript script.vbs")
 
 #Opens website by url that you provide in variable
